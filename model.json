@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/valkyrjs/schemas/v1/model.json",
+  "title": "Model Definition",
+  "type": "object",
+  "properties": {
+    "table": {
+      "type": "string",
+      "definition": "The plural name of the table in the database"
+    },
+    "type": {
+      "type": "string",
+      "definition": "The singular TypeScript name type of the model"
+    },
+    "schema": {
+      "$ref": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "required": ["table", "type", "schema"],
+  "additionalProperties": false
+}
